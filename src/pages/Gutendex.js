@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import BooksContainer from '../components/Gutendex/BooksContainer';
+
 const Gutendex = () => {
 const [books, setBooks] = useState([]);
 
@@ -18,6 +20,7 @@ useEffect(() => {
 return(
   <div className="gutendex">
     <h1>Gutendex Page</h1>
+    <BooksContainer books={books} />
   </div>
 )
 
